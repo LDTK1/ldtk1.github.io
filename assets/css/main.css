@@ -401,6 +401,21 @@ p:last-child {
   background-color: #f5f5f5;
 }
 
+.opreq-text {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ef2129;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #ef2129;
+}
+
+ .opreq-text:hover {
+      color: black; /* Mengubah warna teks menjadi hitam saat kursor menimpanya */
+      border: black solid;
+    }
+
 .orange-text {
   color: #ef2129;
 }
