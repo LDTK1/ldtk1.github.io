@@ -65,6 +65,29 @@
 
     <!-- Template Stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+      /* Tambahan supaya gambar lebih kompatibel di HP */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .hero-bg,
+      .latest-news-bg {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+
+      @media (max-width: 576px) {
+        .single-latest-news img,
+        .single-latest-news .latest-news-bg {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <!--PreLoader-->
@@ -84,7 +107,7 @@
               <!-- logo -->
               <div class="site-logo">
                 <a href="#">
-                  <img src="assets/img/logoheader.png" alt="" />
+                  <img src="assets/img/logoheader.png" alt="" class="img-fluid" />
                 </a>
               </div>
               <!-- logo -->
@@ -98,7 +121,6 @@
                   <li><a href="guidebook.html">Guidebook</a></li>
                   <li><a href="activitycard.html">Activity Card</a></li>
                   <li><a href="k3.html">Video K3</a></li>
-                  
                   <li>
                     <div class="header-icons"></div>
                   </li>
@@ -135,7 +157,6 @@
     <!-- end hero area -->
 
     <!-- announcement start -->
-        <!-- announcement start -->
     <div class="latest-news pt-150 pb-150" id="ann">
       <div class="container">
         <div class="row">
@@ -153,7 +174,8 @@
           </div>
         </div>
 
-        <div class="row g-4"><!-- responsive row -->
+        <div class="row g-4">
+          <!-- responsive row -->
           <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
             <div class="single-latest-news h-100">
               <a
@@ -167,7 +189,8 @@
                   <a
                     href="https://www.instagram.com/p/DNo_yvFhywt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                     target="_blank"
-                  >[COMING SOON LDTK I]</a>
+                    >[COMING SOON LDTK I]</a
+                  >
                 </h3>
                 <p class="blog-meta">
                   <span class="author"><i class="fas fa-user"></i> Reyhan</span>
@@ -176,14 +199,16 @@
                   </span>
                 </p>
                 <p class="excerpt">
-                  Hi! Family 25<br/>
-                  Laboratorium Dasar Teknik Kimia I is coming soon! Stay tune for more information!
+                  Hi! Family 25<br />
+                  Laboratorium Dasar Teknik Kimia I is coming soon! Stay tune
+                  for more information!
                 </p>
                 <a
                   href="https://www.instagram.com/p/DNo_yvFhywt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                   target="_blank"
                   class="read-more-btn"
-                >read more <i class="fas fa-angle-right"></i></a>
+                  >read more <i class="fas fa-angle-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -191,6 +216,7 @@
       </div>
     </div>
     <!-- end announcement -->
+
 
         <!-- <div class="row">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
